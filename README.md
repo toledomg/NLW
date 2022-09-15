@@ -14,6 +14,6 @@ Projeto construído durante o evento Next Level Week da Rocketseat.
 - CSS
 - Git e Github
 
-## Contato
+## ❤️ Contato
 
 toledomg@yahoo.com.br
