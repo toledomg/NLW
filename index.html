@@ -172,8 +172,15 @@
   <script>
     new Swiper(".mySwiper", {
       slidesPerView: 3,
-      loop: true
+      spaceBetween: 30,
+      loop: true,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
+  </script>
   </script>
 </body>
 
