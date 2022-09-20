@@ -57,7 +57,7 @@ header div:hover {
 }
 
 main {
-  max-width: 580px;
+  max-width: 360px;
   width: 90%;
   margin: 32px auto;
   display: grid;
@@ -176,7 +176,6 @@ section {
 }
 
 section ul {
-  max-width: 360px;
   flex-wrap: nowrap;
   gap: 0px;
 }
