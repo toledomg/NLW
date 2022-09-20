@@ -57,7 +57,7 @@ header div:hover {
 }
 
 main {
-  max-width: 360px;
+  max-width: 420px;
   width: 90%;
   margin: 32px auto;
   display: grid;
