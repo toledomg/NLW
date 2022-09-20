@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -26,32 +28,40 @@
       <div>
         <h2>Meus Jogos</h2>
         <p>Os games que mais curto Jogar!!!</p>
-        <ul class="games-list">
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/League%20of%20Legends">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-144x192.jpg" alt="Imagem League Of Legends">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-144x192.jpg"
-                alt="Imagem Counter-Strike: Global Offensive">
-            </a>
-          </li>
 
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-144x192.jpg" alt="Imagem Grand Theft Auto V">
-            </a>
-          </li>
+        <div class="swiper mySwiper">
 
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/Teamfight%20Tactics">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/513143-144x192.jpg" alt="Imagem Teamfight Tactics">
-            </a>
-          </li>
+          <ul class="games-list swiper-wrapper">
 
-        </ul>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/League%20of%20Legends">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-144x192.jpg" alt="Imagem League Of Legends">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-144x192.jpg"
+                  alt="Imagem Counter-Strike: Global Offensive">
+              </a>
+            </li>
+
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-144x192.jpg"
+                  alt="Imagem Grand Theft Auto V">
+              </a>
+            </li>
+
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/Teamfight%20Tactics">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/513143-144x192.jpg" alt="Imagem Teamfight Tactics">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
     </section>
 
@@ -155,7 +165,16 @@
     </section>
 
   </main>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      loop: true
+    });
+  </script>
 </body>
 
 </html>

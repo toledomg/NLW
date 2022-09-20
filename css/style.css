@@ -62,6 +62,7 @@ main {
   margin: 32px auto;
   display: grid;
   gap: 24px;
+  overflow: hidden;
 }
 
 section {
@@ -166,4 +167,16 @@ main section:nth-child(3) {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* swiper */
+
+section {
+  overflow: hidden;
+}
+
+section ul {
+  max-width: 360px;
+  flex-wrap: nowrap;
+  gap: 0px;
 }
