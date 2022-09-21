@@ -1,4 +1,4 @@
-# NFL eSPorts
+# NLW eSPorts
 
 ![preview](./.github/preview.png)
 
